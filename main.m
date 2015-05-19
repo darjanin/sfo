@@ -6,8 +6,8 @@ path('lib', path); % add lib to path
 path('lib/gray2color',path); % add gray2color to path
 path('lib/gray2rgb',path); % add g2color to path
 
-gray_name = 'les1';
-reference_name = 'les';
+gray_name = 'julka';
+reference_name = 'pencil';
 
 color = imread(['assets/color/' reference_name '.jpg']);
 gray = imread(['assets/matlab_gray/' gray_name '.jpg']);
