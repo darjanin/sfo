@@ -1,0 +1,36 @@
+function [ res ] = kSulik( gray_im, color_im)
+    
+    nColors = 3;
+	'color'
+	color_seg = segmenter3000(color_im,nColors);
+	'gray'
+	gray_seg = segmenter3000(gray_im, nColors);
+    figure; 
+    subplot(2,3,1);
+    im1 =gray_seg{1};
+    imshow(im1(:,:,1));
+    subplot(2,3,2);
+    imshow(im1(:,:,2));
+    subplot(2,3,3);
+    im1(:,:,1)
+    imshow(color_seg{3});
+
+            subplot(2,3,4);
+    imshow(gray_seg{1});
+        subplot(2,3,5);
+    imshow(gray_seg{2});
+        subplot(2,3,6);
+    imshow(gray_seg{3});
+
+
+	I1 = g2rgb(im1,color_seg{1});
+	I2 = g2rgb(gray_seg{2},color_seg{2});
+	I3 = g2rgb(gray_seg{3},color_seg{3});
+
+	figure
+	imshow(I1)
+	figure
+	imshow(I2)
+	figure
+	imshow(I3)
+end

@@ -1,0 +1,21 @@
+function [ output_args ] = main( input_args )
+clc;
+I1 = imread('les1.jpg');
+I2 = imread('les.jpg');
+I1 = rgb2gray(I1);
+rgb = g2rgb(I1,I2);
+subplot(2,2,1);
+imshow(I1);
+subplot(2,2,2);
+imshow(I2);
+subplot(2,2,3);
+imshow(rgb);
+
+subplot(2,2,4);
+
+kmeans(I1
+%kSulik(I1,I2);
+%imshow(I);
+%not indasgray
+%MAIN Summary of this function goes here
+%   Detailed explanation goes here
