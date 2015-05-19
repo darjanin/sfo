@@ -1,9 +1,9 @@
 function [ res ] = kSulik( gray_im, color_im, nColors)
     
     
-	'color'
+	'color';
 	color_seg = segmenter3000(color_im,nColors);
-	'gray'
+	'gray';
 	gray_seg = segmenter3000(gray_im, nColors);
     
     figure;

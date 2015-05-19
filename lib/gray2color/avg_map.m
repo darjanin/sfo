@@ -3,14 +3,14 @@ map = map_init;
 
 for i = 0:255
     f = find(ref_gray == i);
-    [t1 t2] = size(f);
+    [t1, t2] = size(f);
     if (t1 == 0)
          continue
     end
     f = int64(f);
-    [w h] = size(ref_gray);
-    [I J] = ind2sub([w h], f);
-    [w h] = size(I);
+    [w, h] = size(ref_gray);
+    [I, J] = ind2sub([w h], f);
+    [w, h] = size(I);
     sumR = 0;
     sumG = 0;
     sumB = 0;
