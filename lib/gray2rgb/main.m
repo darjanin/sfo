@@ -2,10 +2,10 @@ function [] = main()
 segments =3;
 
 clc;
-I1 = imread('./color/catacombs1.jpg');
-I2 = imread('./color/catacombs2.jpg');
+I1 = imread('images/les.jpg');
+I2 = imread('images/les1.jpg');
 I1 = rgb2gray(I1);
-rgb = g2rgb(I1,I2);
+rgb = gray2rgb(I1,I2);
 figure;
 subplot(2,2,1);
 imshow(I1);

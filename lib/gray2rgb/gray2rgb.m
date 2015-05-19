@@ -1,4 +1,4 @@
-function rgb = g2rgb(I1, I2)
+function rgb = gray2rgb(I1, I2)
 
 I1 = uint8(I1);
 

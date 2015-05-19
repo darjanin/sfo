@@ -25,7 +25,7 @@ function [ res ] = kSulik( gray_im, color_im, nColors)
         
         cs1 = color_seg{i} * 255;
         
-        I1 = g2rgb(im1,cs1);
+        I1 = gray2rgb(im1,cs1);
         subplot(1,nColors,i);
          imshow(I1);
          I1 = uint8(I1);
